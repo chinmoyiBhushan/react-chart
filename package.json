@@ -1,0 +1,27 @@
+{
+  "name": "react-chart",
+  "version": "1.0.0",
+  "description": "Cool project for interview :P",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chinmoyiBhushan/react-chart.git"
+  },
+  "keywords": [
+    "react",
+    "cool",
+    "interview",
+    "awesome",
+    "chart",
+    "perfect"
+  ],
+  "author": "Chinmoyi Bhushan Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinmoyiBhushan/react-chart/issues"
+  },
+  "homepage": "https://github.com/chinmoyiBhushan/react-chart#readme"
+}
