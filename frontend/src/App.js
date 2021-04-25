@@ -122,6 +122,8 @@ class App extends React.Component {
       <>
         <h3>Lifetime Players on Team: {teamPlayers.length}</h3>
         <Chart options={chartOps} series={series} type="scatter" />
+
+        <h4>Team Players:</h4>
         {teamPlayers.map(p => <aside className="player" key={p.player_id}>{p.name_display_last_first}</aside>)}
       </>
     )
@@ -152,6 +154,9 @@ class App extends React.Component {
             </TextField>
           </Toolbar>
         </AppBar>
+        {this.state.year || (
+          <h3 className="empty-state">Please select a season to begin...</h3>
+        )}
         {!this.state.currTeam ? (
           <section className="teams-area">
             {this.state.teams.map(this.generateTeamCard)}

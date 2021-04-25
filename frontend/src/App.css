@@ -84,6 +84,20 @@ body {
     font-size: .8em;
 }
 
+.empty-state {
+    color: white;
+    opacity: .3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2em;
+    transform: translateY(-50%);
+}
+
 #root .MuiAppBar-colorPrimary {
     background-color: #e91e63;
 }
