@@ -1,0 +1,89 @@
+body {
+    background: #212121
+}
+
+.logo {
+    width: 3em;
+    margin-right: .5em;
+}
+
+.teams-area {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams-area>.team {
+    display: inline-block;
+    width: 11em;
+    background: white;
+    height: 8em;
+    margin: .5em;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.teams-area>.team:hover>img {
+    opacity: .8;
+}
+
+.teams-area>.team:hover>.content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.teams-area>.team>.content {
+    position: absolute;
+    padding: .5em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: color .25s, background-color .25s;
+}
+
+.teams-area>.team>.content>.name {
+    font-weight: bold;
+    display: block;
+}
+
+.teams-area>.team>.content>.phone {
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+.teams-area>.team>.content>.abbrev {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.7em;
+    bottom: 4px;
+    right: 4px;
+}
+
+.teams-area>.team>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .25s;
+}
+
+.team-details {
+    color: white;
+    padding: 1em;
+}
+
+.team-details .player {
+    display: inline-block;
+    margin: .25em .5em;
+    font-size: .8em;
+}
+
+#root .MuiAppBar-colorPrimary {
+    background-color: #e91e63;
+}
